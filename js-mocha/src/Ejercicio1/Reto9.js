@@ -27,19 +27,3 @@ function adjustLights(lights) {
 
     return Math.min(lightsChanged1, lightsChanged2);
 }
-console.log(
-    adjustLights(['🟢', '🔴', '🟢', '🟢', '🟢']),
-// -> 1 (cambias la cuarta luz a 🔴)
-
-    adjustLights(['🔴', '🔴', '🟢', '🔴', '🟢']),
-// -> 1 (cambia la primera luz a verde)
-
-    adjustLights(['🔴', '🔴', '🟢', '🟢', '🔴']),
-// -> 2 (cambias la segunda luz a 🟢 y la tercera a 🔴)
-
-    adjustLights(['🟢', '🔴', '🟢', '🔴', '🟢']),
-// -> 0 (ya están alternadas)
-
-    adjustLights(['🔴', '🔴', '🔴'])
-// -> 1 (cambias la segunda luz a 🟢)
-)
